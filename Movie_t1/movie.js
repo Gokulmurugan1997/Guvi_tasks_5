@@ -29,27 +29,26 @@ const movie3=new movie2("vikram","AVM");
 console.log(movie3);
 
 // task 3
-var movies=[];
-class movie6{
+
+class Movie6{
     constructor (title,studio,rating){
         this.title=title;
         this.studio=studio;
         this.rating=rating;
-    }
-        getPG() {
-            if (this.rating=="PG"){
-                return (movies.push(this.title))
         }
-            return movies
+        getPG(){
+           return (arr.filter(element=>Movie6.this.rating==PG))
         }
-        
-    
     }
+ 
+const movies7=new Movie6("kgf", "sun", "R");
+const movies8=new Movie6("kgf", "sun", "PG");
+const movies9=new Movie6("beast", "moon", "PG");
+const arr=[movies7, movies8, movies9];
 
 
-const movie7=new movie6("vikram","AVM","R");
-
-    console.log(movie7.getPG());
+        console.log(Movie6.getPG());
+   
 
 // task 4
 
