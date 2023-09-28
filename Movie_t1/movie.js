@@ -36,8 +36,9 @@ class Movie6{
         this.studio=studio;
         this.rating=rating;
         }
-        getPG(){
-           return (arr.filter(element=>Movie6.this.rating==PG))
+        getPG(arr){
+            var res= arr.filter((element)=>element.rating==="PG")
+           return res
         }
     }
  
@@ -46,8 +47,8 @@ const movies8=new Movie6("kgf", "sun", "PG");
 const movies9=new Movie6("beast", "moon", "PG");
 const arr=[movies7, movies8, movies9];
 
-
-        console.log(Movie6.getPG());
+        let moviedetails=new Movie6();
+        console.log(moviedetails.getPG(arr));
    
 
 // task 4
